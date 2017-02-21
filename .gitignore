@@ -1,0 +1,12 @@
+
+*.pyc
+.Python
+.idea/
+
+
+# MacOSX
+.DS_Store
+
+# virtualenv
+.myvenv
+myvenv/
