@@ -1,0 +1,187 @@
+
+{% extends 'master.html' %}
+
+{% block body %}
+
+    {% load staticfiles %}
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1>All Courses</h1>
+                <ul class="breadcrumb">
+                  <li><a href="/">Home</a> <span class="divider">/</span></li>
+                  <li class="active">All  Courses</li>
+                </ul>
+            </div>
+            <!-- =========================Start Col left section ============================= -->
+            <aside class="col-md-4 col-sm-4">
+                <div class="col-left">
+                    <h3>Browse Courses</h3>
+                    <ul class="submenu-col">
+                        <li><a href="#" id="active">All Courses</a></li>
+                        <li><a href="">Administration (10)</a></li>
+                        <li><a href="">Business (08)</a></li>
+                        <li><a href="">Communication (05) <img src="{% static 'img/new.png' %}" alt="New"></a></li>
+                        <li><a href="">Computing (08) </a></li>
+                        <li><a href="">Counseling (04)</a></li>
+                        <li><a href="">Education (06)</a></li>
+                        <li><a href="">Engineering (08)</a></li>
+                    </ul>
+
+                    <hr>
+
+                    <h5>Upcoming Courses</h5>
+                    <p>Suspendisse quis risus turpis, ut pharetra arcu. Donec adipiscing, quam non faucibus luctus, mi
+                        arcu blandit diam, at faucibus mi ante vel augue.</p>
+                    <p><a href="#" class=" button_red_small">View Courses</a></p>
+
+                </div>
+                <p><img src="{% static 'img/banner.jpg' %}" alt="Banner" class="img-rounded img-responsive"></p>
+            </aside>
+
+            <section class="col-md-8 col-sm-8">
+                <div class="col-right">
+                    <div class="main-img">
+                        <img src="{% static 'img/pic-2.jpg' %}" alt="" class="img-responsive">
+                        <p class="lead">Tibique dolores adversarium ne vel. At vide errem duo, vis luptatum menandri
+                            ullamcorper id. </p>
+                    </div>
+
+                    <div class="strip-courses">
+                        <div class="title-course">
+                            <h3>Administration <img src="{% static 'img/new.png' %}" alt="New"></h3>
+                            <ul>
+                                <li><i class="icon-calendar"></i> Start date: 24/06/13</li>
+                                <li><i class="icon-bookmark"></i> ID: 012</li>
+                            </ul>
+                        </div>
+                        <div class="description">
+                            <p>An utinam reprimique duo, putant mandamus cu qui. Autem possim his cu, quodsi nominavi
+                                fabellas ut sit, mea ea ullum epicurei. Saepe tantas ocurreret duo ea, has facilisi
+                                vulputate an. Priaeque iuvaret nominati et, ad mea clita numquam. Maluisset dissentiunt
+                                et per, dico liber erroribus vis te. Dolor consul graecis nec ut, scripta eruditi
+                                scriptorem et nam.</p>
+                            <ul>
+                                <li><i class="icon-book"></i> 10 Lessons</li>
+                                <li><i class="icon-reorder"></i> Level Intermediate</li>
+                            </ul>
+                            <a href="" class="button_medium button-align-2">Read more </a>
+                        </div>
+                    </div><!-- end strip-->
+
+                    <div class="strip-courses gray">
+                        <div class="title-course">
+                            <h3>Business </h3>
+                            <ul>
+                                <li><i class="icon-calendar"></i> Start date: 24/06/13</li>
+                                <li><i class="icon-bookmark"></i> ID: 012</li>
+                            </ul>
+                        </div>
+                        <div class="description">
+                            <p>An utinam reprimique duo, putant mandamus cu qui. Autem possim his cu, quodsi nominavi
+                                fabellas ut sit, mea ea ullum epicurei. Saepe tantas ocurreret duo ea, has facilisi
+                                vulputate an. Priaeque iuvaret nominati et, ad mea clita numquam. Maluisset dissentiunt
+                                et per, dico liber erroribus vis te. Dolor consul graecis nec ut, scripta eruditi
+                                scriptorem et nam.</p>
+                            <ul>
+                                <li><i class="icon-book"></i> 10 Lessons</li>
+                                <li><i class="icon-reorder"></i> Level Basic</li>
+                                <li class="online"><i class="icon-laptop"></i> Online</li>
+                            </ul>
+                            <a href="" class="button_medium button-align-2">Read more </a>
+                        </div>
+                    </div><!-- end strip-->
+
+                    <div class="strip-courses">
+                        <div class="title-course">
+                            <h3>Communication</h3>
+                            <ul>
+                                <li><i class="icon-calendar"></i> Start date: 24/06/13</li>
+                                <li><i class="icon-bookmark"></i> ID: 012</li>
+                            </ul>
+                        </div>
+                        <div class="description">
+                            <p>An utinam reprimique duo, putant mandamus cu qui. Autem possim his cu, quodsi nominavi
+                                fabellas ut sit, mea ea ullum epicurei. Saepe tantas ocurreret duo ea, has facilisi
+                                vulputate an. Priaeque iuvaret nominati et, ad mea clita numquam. Maluisset dissentiunt
+                                et per, dico liber erroribus vis te. Dolor consul graecis nec ut, scripta eruditi
+                                scriptorem et nam.</p>
+                            <ul>
+                                <li><i class="icon-book"></i> 10 Lessons</li>
+                                <li><i class="icon-reorder"></i> Level Intermediate</li>
+                                <li class="online"><i class="icon-laptop"></i> Online</li>
+                            </ul>
+                            <a href="" class="button_medium button-align-2">Read more </a>
+                        </div>
+                    </div><!-- end strip-->
+
+                    <div class="strip-courses gray">
+                        <div class="title-course">
+                            <h3>Business </h3>
+                            <ul>
+                                <li><i class="icon-calendar"></i> Start date: 24/06/13</li>
+                                <li><i class="icon-bookmark"></i> ID: 012</li>
+                            </ul>
+                        </div>
+                        <div class="description">
+                            <p>An utinam reprimique duo, putant mandamus cu qui. Autem possim his cu, quodsi nominavi
+                                fabellas ut sit, mea ea ullum epicurei. Saepe tantas ocurreret duo ea, has facilisi
+                                vulputate an. Priaeque iuvaret nominati et, ad mea clita numquam. Maluisset dissentiunt
+                                et per, dico liber erroribus vis te. Dolor consul graecis nec ut, scripta eruditi
+                                scriptorem et nam.</p>
+                            <ul>
+                                <li><i class="icon-book"></i> 10 Lessons</li>
+                                <li><i class="icon-reorder"></i> Level Basic</li>
+                                <li class="online"><i class="icon-laptop"></i> Online</li>
+                            </ul>
+                            <a href="" class="button_medium button-align-2">Read more </a>
+                        </div>
+                    </div><!-- end strip-->
+
+                    <div class="strip-courses">
+                        <div class="title-course">
+                            <h3>Communication</h3>
+                            <ul>
+                                <li><i class="icon-calendar"></i> Start date: 24/06/13</li>
+                                <li><i class="icon-bookmark"></i> ID: 012</li>
+                            </ul>
+                        </div>
+                        <div class="description">
+                            <p>An utinam reprimique duo, putant mandamus cu qui. Autem possim his cu, quodsi nominavi
+                                fabellas ut sit, mea ea ullum epicurei. Saepe tantas ocurreret duo ea, has facilisi
+                                vulputate an. Priaeque iuvaret nominati et, ad mea clita numquam. Maluisset dissentiunt
+                                et per, dico liber erroribus vis te. Dolor consul graecis nec ut, scripta eruditi
+                                scriptorem et nam.</p>
+                            <ul>
+                                <li><i class="icon-book"></i> 10 Lessons</li>
+                                <li><i class="icon-reorder"></i> Level Intermediate</li>
+                                <li class="online"><i class="icon-laptop"></i> Online</li>
+                            </ul>
+                            <a href="" class="button_medium button-align-2">Read more </a>
+                        </div>
+                    </div><!-- end strip-->
+
+                    <hr>
+
+                    <div class="text-center">
+                        <ul class="pagination">
+                            <li><a href="#">Prev</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">Next</a></li>
+                        </ul>
+                    </div><!-- end pagination-->
+
+                </div><!-- end col right-->
+
+            </section>
+
+        </div><!-- end row-->
+
+    </div> <!-- end container-->
+
+
+{% endblock %}
