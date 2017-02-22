@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'home',
     'registration',
     'courses',
+    'training'
 ]
 
 MIDDLEWARE = [
