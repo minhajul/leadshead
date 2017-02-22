@@ -20,4 +20,5 @@ urlpatterns = [
     url(r'', include('home.urls'), name='home'),
     url(r'^courses/', include('courses.urls'), name='courses'),
     url(r'^admin/', admin.site.urls),
+    url(r'^tinymce/', include('tinymce.urls')),
 ]

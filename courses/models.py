@@ -1,4 +1,5 @@
 from django.db import models
+from tinymce.models import HTMLField
 
 
 class Course(models.Model):
@@ -16,7 +17,7 @@ class Course(models.Model):
     fee = models.IntegerField()
     location = models.CharField(max_length=100, choices=location_choice)
     duration = models.CharField(max_length=50)
-    details = models.TextField(max_length=255)
+    details = HTMLField()
 
     def __str__(self):
         return self.title
