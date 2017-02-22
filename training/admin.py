@@ -1,3 +1,9 @@
 from django.contrib import admin
+from training.models import Training
 
-# Register your models here.
+
+class TrainingAdmin(admin.ModelAdmin):
+    list_filter = ['user']
+
+
+admin.site.register(Training, TrainingAdmin)
