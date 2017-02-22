@@ -15,7 +15,7 @@ class Course(models.Model):
     )
     title = models.CharField(max_length=200)
     fee = models.IntegerField()
-    location = models.CharField(max_length=100, choices=location_choice)
+    location = models.CharField(max_length=100, choices=location_choice, default=None)
     duration = models.CharField(max_length=50)
     details = HTMLField()
     created_on = models.DateTimeField(auto_now_add=True)
