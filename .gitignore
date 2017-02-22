@@ -3,11 +3,11 @@
 .Python
 .idea/
 /.idea
-
+__pycache__/
 
 # MacOSX
 .DS_Store
 
 # virtualenv
-.myvenv
-myvenv/
+venv
+venv/
