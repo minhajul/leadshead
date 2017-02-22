@@ -18,6 +18,7 @@ class Course(models.Model):
     location = models.CharField(max_length=100, choices=location_choice)
     duration = models.CharField(max_length=50)
     details = HTMLField()
+    created_on = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.title
