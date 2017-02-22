@@ -3,7 +3,7 @@ from training.models import Training
 
 
 class TrainingAdmin(admin.ModelAdmin):
-    list_filter = ['user']
+    list_filter = ['user', 'participant']
 
 
 admin.site.register(Training, TrainingAdmin)
