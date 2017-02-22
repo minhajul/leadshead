@@ -2,7 +2,7 @@
 *.pyc
 .Python
 .idea/
-/.idea
+.idea/
 __pycache__/
 
 # MacOSX
