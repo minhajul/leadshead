@@ -5,11 +5,10 @@ python:
 
 env:
   - DJANGO=1.10.5
-  - DJANGO=1.9.12
 
 install:
   - pip install -q Django==$DJANGO
   - pip install -r requirements.txt
 
-script:
-  - python manage.py test
+#script:
+#  - python manage.py test
