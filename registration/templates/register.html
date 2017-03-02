@@ -42,7 +42,17 @@
                     <h4>Registration</h4>
 
                     <div id="message-contact"></div>
-                    <form method="post" action="" id="contactform">
+
+                    {% if errors %}
+                        <ul>
+                            {% for error in errors %}
+                                <li>{{ error }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+
+                    <form method="post" action="/register/user/" id="contactform">
+                        {% csrf_token %}
                         <div class="row">
                             <div class="col-md-6">
                                 <label>Username <span class="required">* </span></label>
@@ -57,11 +67,11 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <label>First Name <span class="required">* </span></label>
-                                <input type="text" name="firstname" class="form-control ie7-margin" id="name_contact" placeholder="First Name">
+                                <input type="text" name="first_name" class="form-control ie7-margin" id="name_contact" placeholder="First Name">
                             </div>
                             <div class="col-md-6">
                                 <label>Last name <span class="required">* </span></label>
-                                <input type="text" name="lastname" class="form-control ie7-margin" id="lastname_contact" placeholder="Last Name">
+                                <input type="text" name="last_name" class="form-control ie7-margin" id="lastname_contact" placeholder="Last Name">
                             </div>
                         </div>
                         <div class="row">
@@ -79,7 +89,7 @@
                         <div class="row">
                             <div class="col-md-3"></div>
                             <div class="button-align col-md-9">
-                                <input type="submit" id="submit-contact" value="Submit" class=" button_medium">
+                                <input type="submit" value="Submit" class="button_medium">
                             </div>
                         </div>
                         <hr>
