@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb2a132d-0572-4d22-845f-12844af14254" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home/templates/home.html" afterPath="$PROJECT_DIR$/home/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leadshead/urls.py" afterPath="$PROJECT_DIR$/leadshead/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/login.html" afterPath="$PROJECT_DIR$/registration/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/register.html" afterPath="$PROJECT_DIR$/registration/templates/register.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,22 +28,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/registration/templates/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="158" column="0" lean-forward="true" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
-              <folding>
-                <element signature="e#1470#1487#0#HTML" expanded="true" />
-                <element signature="e#1890#1913#0#HTML" expanded="true" />
-                <element signature="e#8079#8105#0#HTML" expanded="true" />
-                <element signature="e#8366#8428#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/registration/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -57,24 +40,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/leadshead/urls.py">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/registration/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="697">
+              <caret line="41" column="59" lean-forward="true" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
               <folding>
-                <element signature="e#643#684#0" expanded="true" />
+                <element signature="e#1392#1408#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home/templates/home.html">
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/registration/templates/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-              <folding />
+            <state relative-caret-position="555">
+              <caret line="140" column="14" lean-forward="false" selection-start-line="140" selection-start-column="14" selection-end-line="140" selection-end-column="14" />
+              <folding>
+                <element signature="e#1392#1408#0#HTML" expanded="true" />
+                <element signature="e#6563#6589#0#HTML" expanded="true" />
+                <element signature="e#6850#6912#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,9 +93,10 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/registration/views.py" />
         <option value="$PROJECT_DIR$/home/templates/home.html" />
-        <option value="$PROJECT_DIR$/registration/templates/login.html" />
         <option value="$PROJECT_DIR$/leadshead/urls.py" />
         <option value="$PROJECT_DIR$/registration/urls.py" />
+        <option value="$PROJECT_DIR$/registration/templates/register.html" />
+        <option value="$PROJECT_DIR$/registration/templates/login.html" />
       </list>
     </option>
   </component>
@@ -160,7 +148,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="leadshead" />
+              <option name="myItemId" value="registration" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -174,7 +162,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
+              <option name="myItemId" value="registration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -644,19 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/registration/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="158" column="0" lean-forward="true" selection-start-line="158" selection-start-column="0" selection-end-line="158" selection-end-column="0" />
-          <folding>
-            <element signature="e#1470#1487#0#HTML" expanded="true" />
-            <element signature="e#1890#1913#0#HTML" expanded="true" />
-            <element signature="e#8079#8105#0#HTML" expanded="true" />
-            <element signature="e#8366#8428#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/courses/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -693,6 +672,28 @@
           <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registration/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="140" column="14" lean-forward="false" selection-start-line="140" selection-start-column="14" selection-end-line="140" selection-end-column="14" />
+          <folding>
+            <element signature="e#1392#1408#0#HTML" expanded="true" />
+            <element signature="e#6563#6589#0#HTML" expanded="true" />
+            <element signature="e#6850#6912#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registration/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="59" lean-forward="true" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
+          <folding>
+            <element signature="e#1392#1408#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
