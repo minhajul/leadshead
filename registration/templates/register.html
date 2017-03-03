@@ -51,7 +51,7 @@
                         </ul>
                     {% endif %}
 
-                    <form method="post" action="/register/user/" id="contactform">
+                    <form method="post" action="{% url 'register_user' %}" id="contactform">
                         {% csrf_token %}
                         <div class="row">
                             <div class="col-md-6">
