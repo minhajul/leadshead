@@ -311,9 +311,9 @@
                     <div class="drop-down-container normal">
                         <ul>
                             <li><a href="" title="">Profile</a></li>
-                            <li><a href="" title="Course detail">Logout</a></li>
+                            <li><a href="{% url 'logout' %}" title="Course detail">Logout</a></li>
                         </ul>
-                    </div><!-- End dropdown normal -->
+                    </div>
                 </li>
             {% else %}
                  <li class="drop-normal"><a href="javascript:void(0)" class="drop-down">My Account</a>
@@ -321,9 +321,8 @@
                         <ul>
                             <li><a href="{% url 'login' %}" title="Login">Login</a></li>
                         </ul>
-                    </div><!-- End dropdown normal -->
+                    </div>
                 </li>
-
             {% endif %}
 
         </ul><!-- End Mega Menu -->

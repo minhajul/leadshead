@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views.decorators.csrf import csrf_protect
 from django.contrib.auth.models import User
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 
 
@@ -28,6 +28,11 @@ def login_user(request):
             return redirect('login')
     else:
         return redirect('login')
+
+
+def logout_view(request):
+    logout(request)
+    return redirect('/')
 
 
 def register_view(request):
