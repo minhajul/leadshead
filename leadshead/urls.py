@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+import debug_toolbar
 
 urlpatterns = [
     url(r'', include('home.urls'), name='home'),
@@ -22,4 +23,5 @@ urlpatterns = [
     url(r'', include('registration.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^tinymce/', include('tinymce.urls')),
+    url(r'^__debug__/', include(debug_toolbar.urls)),
 ]

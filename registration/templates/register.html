@@ -52,7 +52,9 @@
                     {% endif %}
 
                     <form method="post" action="{% url 'register_user' %}" id="contactform">
+
                         {% csrf_token %}
+
                         <div class="row">
                             <div class="col-md-6">
                                 <label>Username <span class="required">* </span></label>
