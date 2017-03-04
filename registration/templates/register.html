@@ -11,7 +11,7 @@
             <div class="col-md-12">
                 <h1>Registration</h1>
                 <ul class="breadcrumb">
-                    <li><a href="/">Home</a><span class="divider"></span></li>
+                    <li><a href="{% url 'home' %}">Home</a><span class="divider"></span></li>
                     <li class="active">Registration</li>
                 </ul>
             </div>
@@ -30,7 +30,7 @@
                     <br/>
                 </div>
                 <p>
-                    <a href="/courses" title="All courses">
+                    <a href="{% url 'courses' %}" title="All courses">
                         <img src="{% static 'img/banner.jpg' %}" alt="Banner" class="img-rounded img-responsive">
                     </a>
                 </p>

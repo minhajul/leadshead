@@ -58,7 +58,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-sm-4" id="logo">
-                <a href="/">
+                <a href="{% url 'home' %}">
                     <h1>LeadsHead</h1>
                 </a>
             </div>
@@ -87,12 +87,13 @@
 
 {% endblock %}
 
-
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-sm-4" id="brand-footer">
-                <p><img src="{% static 'img/logo-footer.jpg' %}" alt=""></p>
+                <h2>
+                    <a href="{% url 'home' %}">LeadsHead</a>
+                </h2>
                 <p>Copyright © {% now "Y" %} </p>
                 <div class="twitter"><a href="#">Follow on Twitter</a></div>
                 <div class="fb"><a href="#">Follow on Facebook</a></div>
@@ -100,10 +101,10 @@
             <div class="col-md-4 col-sm-4" id="contacts-footer">
                 <h4>Contacts</h4>
                 <ul>
-                    <li><i class="icon-home"></i> 11 Fifth Ave, Loftus - NEW JERSEY, US</li>
-                    <li><i class="icon-phone"></i> Telephone: + 61 (2) 8093 3400</li>
-                    <li><i class="icon-phone-sign"></i> Fax: +61 (2) 9542 3599</li>
-                    <li><i class="icon-envelope"></i> Email: <a href="#">submissions@domain.com</a></li>
+                    <li><i class="icon-home"></i> 11 Fifth Ave - Sydney, AU</li>
+                    <li><i class="icon-phone"></i> Telephone: + 65 (2) 0000 0000</li>
+                    <li><i class="icon-phone-sign"></i> Fax: +65 (2) 0000 0000</li>
+                    <li><i class="icon-envelope"></i> Email: <a href="#">test@gmail.com</a></li>
                 </ul>
                 <hr>
                 <h4>Newsletter</h4>

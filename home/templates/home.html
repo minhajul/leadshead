@@ -84,8 +84,11 @@
                 </div>
 
             </div>
-            <p><a href="all-courses.html" title="All courses"><img src="{% static 'img/banner.jpg' %}" alt="Banner"
-                                                                   class="img-rounded img-responsive"></a></p>
+            <p>
+                <a href="{% url 'courses' %}" title="All courses">
+                    <img src="{% static 'img/banner.jpg' %}" alt="Banner" class="img-rounded img-responsive">
+                </a>
+            </p>
         </aside>
 
         <section class="col-md-8 col-sm-8">
@@ -126,7 +129,7 @@
                     <p>No course</p>
                 {% endif %}
 
-                <p class="text-center"><a href="courses" class="button_large">View all courses </a></p>
+                <p class="text-center"><a href="{% url 'courses' %}" class="button_large">View all courses </a></p>
 
             </div>
         </section>
