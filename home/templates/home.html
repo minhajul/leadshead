@@ -109,7 +109,7 @@
                                 <div class="clearfix visible-xs-block"></div>
                                 <div class="col-md-9">
                                     <h4>{{ course.title }}</h4>
-                                    <p>{{ course.details | safe }}</p>
+                                    <p>{{ course.details | safe | slice:":500" }}</p>
                                     <ul class="data-lessons">
                                         <li><i class="icon-time"></i>{{ course.duration }}</li>
                                         <li><i class="icon-film"></i>
