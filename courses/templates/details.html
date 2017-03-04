@@ -1,0 +1,89 @@
+
+{% extends 'master.html' %}
+
+{% block body %}
+
+    {% load staticfiles %}
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1>All Courses</h1>
+                <ul class="breadcrumb">
+                  <li><a href="/">Home</a> <span class="divider">/</span></li>
+                  <li class="active">All  Courses</li>
+                </ul>
+            </div>
+            <!-- =========================Start Col left section ============================= -->
+            <aside class="col-md-4 col-sm-4">
+                <div class="col-left">
+                    <h3>Browse Courses</h3>
+                    <ul class="submenu-col">
+                        <li><a href="#" id="active">All Courses</a></li>
+                        <li><a href="">Administration (10)</a></li>
+                        <li><a href="">Business (08)</a></li>
+                        <li><a href="">Communication (05) <img src="{% static 'img/new.png' %}" alt="New"></a></li>
+                        <li><a href="">Computing (08) </a></li>
+                        <li><a href="">Counseling (04)</a></li>
+                        <li><a href="">Education (06)</a></li>
+                        <li><a href="">Engineering (08)</a></li>
+                    </ul>
+
+                    <hr>
+
+                    <h5>Upcoming Courses</h5>
+                    <p>Suspendisse quis risus turpis, ut pharetra arcu. Donec adipiscing, quam non faucibus luctus, mi
+                        arcu blandit diam, at faucibus mi ante vel augue.</p>
+                    <p><a href="#" class=" button_red_small">View Courses</a></p>
+
+                </div>
+                <p><img src="{% static 'img/banner.jpg' %}" alt="Banner" class="img-rounded img-responsive"></p>
+            </aside>
+
+            <section class="col-md-8 col-sm-8">
+
+                <div class="col-right">
+                    <div class="main-img">
+                        <img src="{% static 'img/pic-2.jpg' %}" alt="" class="img-responsive">
+                        <p class="lead">
+                            Tibique dolores adversarium ne vel. At vide errem duo, vis luptatum menandri
+                            ullamcorper id.
+                        </p>
+                    </div>
+
+                    {% if course %}
+                        <div class="strip-courses">
+                            <div class="title-course">
+                                <h3>Administration <img src="{% static 'img/new.png' %}" alt="New"></h3>
+                                <ul>
+                                    <li><i class="icon-calendar"></i> Start
+                                        date: {{ course.start_date | date:"F j, Y" }}</li>
+                                    <li><i class="icon-bookmark"></i> ID: {{ course.id }}</li>
+                                </ul>
+                            </div>
+                            <div class="description">
+                                <p>{{ course.details | safe }}</p>
+                                <ul>
+                                    <li><i class="icon-book"></i> 10 Lessons</li>
+                                    <li><i class="icon-reorder"></i> Level {{ course.level }}</li>
+                                </ul>
+                            </div>
+                        </div><!-- end strip-->
+
+                    {% else %}
+                        <p>No course found</p>
+                    {% endif %}
+
+                    <hr>
+
+                </div><!-- end col right-->
+
+            </section>
+
+        </div><!-- end row-->
+
+    </div> <!-- end container-->
+
+
+{% endblock %}

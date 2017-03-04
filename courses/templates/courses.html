@@ -63,12 +63,12 @@
                             </ul>
                         </div>
                         <div class="description">
-                            <p>{{ course.details | safe}}</p>
+                            <p>{{ course.details | safe| slice:":500" }}</p>
                             <ul>
                                 <li><i class="icon-book"></i> 10 Lessons</li>
                                 <li><i class="icon-reorder"></i> Level {{ course.level }}</li>
                             </ul>
-                            <a href="" class="button_medium button-align-2">Read more </a>
+                            <a href="{% url 'details' course.id %}" class="button_medium button-align-2">Read more </a>
                         </div>
                     </div><!-- end strip-->
                         {% endfor %}
@@ -77,15 +77,36 @@
                     {% endif %}
                     <hr>
 
-                    <div class="text-center">
+{#                    <div class="text-center">#}
+{#                        <ul class="pagination">#}
+{#                            <li><a href="#">Prev</a></li>#}
+{#                            <li class="active"><a href="#">1</a></li>#}
+{#                            <li><a href="#">2</a></li>#}
+{#                            <li><a href="#">3</a></li>#}
+{#                            <li><a href="#">Next</a></li>#}
+{#                        </ul>#}
+{#                    </div><!-- end pagination-->#}
+{#                #}
+
+                {% if is_paginated %}
+                     <div class="text-center">
                         <ul class="pagination">
-                            <li><a href="#">Prev</a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">Next</a></li>
-                        </ul>
-                    </div><!-- end pagination-->
+                            <span class="step-links" style="text-align: center !important;">
+                                {% if courses.has_previous %}
+                                    <li><a href="?page={{ page_obj.previous_page_number }}">Prev</a></li>
+                                {% endif %}
+
+                                <span class="current">
+                                    Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+                                </span>
+
+                                {% if page_obj.has_next %}
+                                    <li><a href="?page={{ page_obj.next_page_number }}">Next</a></li>
+                                {% endif %}
+                            </span>
+                         </ul>
+                    </div>
+                {% endif %}
 
                 </div><!-- end col right-->
 
