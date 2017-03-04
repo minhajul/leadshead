@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eb2a132d-0572-4d22-845f-12844af14254" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courses/templates/courses.html" afterPath="$PROJECT_DIR$/courses/templates/courses.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/courses/templates/details.html" afterPath="$PROJECT_DIR$/courses/templates/details.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home/templates/home.html" afterPath="$PROJECT_DIR$/home/templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home/templates/master.html" afterPath="$PROJECT_DIR$/home/templates/master.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/login.html" afterPath="$PROJECT_DIR$/registration/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration/templates/register.html" afterPath="$PROJECT_DIR$/registration/templates/register.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +20,8 @@
       <file leaf-file-name="courses.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/courses/templates/courses.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="80" lean-forward="false" selection-start-line="13" selection-start-column="80" selection-end-line="13" selection-end-column="80" />
+            <state relative-caret-position="442">
+              <caret line="78" column="16" lean-forward="false" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -801,8 +796,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/courses/templates/courses.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="80" lean-forward="false" selection-start-line="13" selection-start-column="80" selection-end-line="13" selection-end-column="80" />
+        <state relative-caret-position="442">
+          <caret line="78" column="16" lean-forward="false" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
           <folding />
         </state>
       </provider>
