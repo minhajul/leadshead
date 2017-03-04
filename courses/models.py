@@ -13,11 +13,19 @@ class Course(models.Model):
         ('WA - Perth', 'WA - Perth'),
         ('DH - Dhaka', 'DH - Dhaka'),
     )
+    level_choice = (
+        ('Beginner', 'Beginner'),
+        ('Intermediate', 'Intermediate'),
+        ('Advanced', 'Advanced'),
+    )
+
     title = models.CharField(max_length=200)
     fee = models.IntegerField()
     location = models.CharField(max_length=100, choices=location_choice, default=None)
     duration = models.CharField(max_length=50)
     details = HTMLField()
+    level = models.CharField(max_length=100, choices=level_choice, default=None)
+    start_date = models.DateTimeField(default=None)
     created_on = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

@@ -58,7 +58,7 @@
                         <div class="title-course">
                             <h3>Administration <img src="{% static 'img/new.png' %}" alt="New"></h3>
                             <ul>
-                                <li><i class="icon-calendar"></i> Start date: 24/06/13</li>
+                                <li><i class="icon-calendar"></i> Start date: {{ course.start_date | date:"F j, Y" }}</li>
                                 <li><i class="icon-bookmark"></i> ID: {{ course.id }}</li>
                             </ul>
                         </div>
@@ -66,7 +66,7 @@
                             <p>{{ course.details | safe}}</p>
                             <ul>
                                 <li><i class="icon-book"></i> 10 Lessons</li>
-                                <li><i class="icon-reorder"></i> Level Intermediate</li>
+                                <li><i class="icon-reorder"></i> Level {{ course.level }}</li>
                             </ul>
                             <a href="" class="button_medium button-align-2">Read more </a>
                         </div>
