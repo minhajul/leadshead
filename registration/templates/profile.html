@@ -1,0 +1,76 @@
+
+
+{% extends 'master.html' %}
+
+{% block body %}
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Profile</h1>
+                <ul class="breadcrumb">
+                    <li><a href="{% url 'home' %}">Home</a><span class="divider"></span></li>
+                    <li class="active">Profile</li>
+                </ul>
+            </div>
+
+            <!-- =========================Start Col right section ============================= -->
+            <section class="col-md-8 col-sm-8">
+                <div class="col-right">
+                    <h4>Profile</h4>
+
+                    <div id="message-contact"></div>
+
+                    {% if user_profile %}
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Username <span class="required">* </span></label>
+                                <input type="text" readonly="readonly" name="username" id="email_contact" class="form-control ie7-margin" value="{{ user_profile.username }}">
+                            </div>
+                             <div class="col-md-6">
+                                <label>Email <span class="required">* </span></label>
+                                <input type="email" readonly="readonly" name="email" id="email_contact" class="form-control ie7-margin" value="{{ user_profile.email }}">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>First Name <span class="required">* </span></label>
+                                <input type="text" name="first_name" class="form-control ie7-margin" id="name_contact" value="{{ user_profile.first_name }}">
+                            </div>
+                            <div class="col-md-6">
+                                <label>Last name <span class="required">* </span></label>
+                                <input type="text" name="last_name" class="form-control ie7-margin" id="lastname_contact" value="{{ user_profile.last_name }}">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>First Name <span class="required">* </span></label>
+                                <input type="text" name="phone" class="form-control ie7-margin" id="name_contact" value="{{ user_profile.profile.phone }}">
+                            </div>
+                            <div class="col-md-6">
+                                <label>Last name <span class="required">* </span></label>
+                                <input type="text" name="address" class="form-control ie7-margin" id="lastname_contact" value="{{ user_profile.profile.address }}">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="button-align col-md-9">
+                                <input type="submit" value="Submit" class="button_medium">
+                            </div>
+                        </div>
+
+                    {% endif %}
+
+                        <hr>
+
+                </div><!-- end col right-->
+            </section>
+        </div><!-- end row-->
+    </div><!-- end container-->
+
+
+{% endblock %}

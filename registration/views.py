@@ -1,8 +1,10 @@
 from django.shortcuts import render, redirect
 from django.views.decorators.csrf import csrf_protect
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
+from django.shortcuts import get_object_or_404
 
 
 def login_view(request):
@@ -12,7 +14,6 @@ def login_view(request):
 @csrf_protect
 def login_user(request):
     if request.method == "POST":
-        # email = request.POST['email']
         username = request.POST['username']
         password = request.POST['password']
         user = authenticate(username=username, password=password)
@@ -50,3 +51,9 @@ def register_user(request):
     )
     messages.success(request, 'Registration Success')
     return redirect('home.html')
+
+
+@login_required
+def profile(request, username):
+    user = get_object_or_404(User, username=username)
+    return render(request, 'profile.html', {'user_profile': user})
