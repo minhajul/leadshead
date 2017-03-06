@@ -310,7 +310,7 @@
                 <li class="drop-normal"><a href="javascript:void(0)" class="drop-down">{{ user.username }}</a>
                     <div class="drop-down-container normal">
                         <ul>
-                            <li><a href="" title="">Profile</a></li>
+                            <li><a href="{% url 'profile' user.username %}" title="">Profile</a></li>
                             <li><a href="{% url 'logout' %}" title="Course detail">Logout</a></li>
                         </ul>
                     </div>

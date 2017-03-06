@@ -55,5 +55,9 @@ def register_user(request):
 
 @login_required
 def profile(request, username):
-    user = get_object_or_404(User, username=username)
+    try:
+        user = User.objects.get(username=username)
+    except User.DoesNotExist:
+        return redirect('/')
+
     return render(request, 'profile.html', {'user_profile': user})
