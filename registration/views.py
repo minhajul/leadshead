@@ -30,7 +30,7 @@ def login_user(request):
         return redirect('login')
 
 
-def logout_view(request):
+def logout_user(request):
     logout(request)
     return redirect('/')
 
