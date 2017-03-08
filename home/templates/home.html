@@ -7,134 +7,132 @@
 
 {% include 'slider.html' %}
 
+    <div class="container">
+         <div class="row" id="main-boxes">
+            <div class="col-md-4 col-sm-4">
+                <div class="box-style-2 green">
+                    <a href="{% url 'courses' %}" title="All Courses">
+                        <img src="{% static 'img/icon-home-course.png' %}" alt="">
+                        <h3>Courses</h3>
+                        <p>Lorem ipsum dolor sit amet, dicta aliquip ad vix, ne sit everti corpora. Qui cu eros feugiat, elitr iudico ad pri.</p>
+                    </a>
+                </div>
+            </div>
 
-<div class="container">
-     <div class="row" id="main-boxes">
-    	<div class="col-md-4 col-sm-4">
-        	<div class="box-style-2 green">
-            	<a href="{% url 'courses' %}" title="All Courses">
-                	<img src="{% static 'img/icon-home-course.png' %}" alt="">
-                    <h3>Courses</h3>
-                    <p>Lorem ipsum dolor sit amet, dicta aliquip ad vix, ne sit everti corpora. Qui cu eros feugiat, elitr iudico ad pri.</p>
-                </a>
+            <div class="col-md-4 col-sm-4">
+                <div class="box-style-2 orange">
+                    <a href="" title="Apply">
+                        <img src="{% static 'img/icon-home-apply.png' %}" alt="">
+                        <h3>Apply now</h3>
+                        <p>Lorem ipsum dolor sit amet, dicta aliquip ad vix, ne sit everti corpora. Qui cu eros feugiat, elitr iudico ad pri.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <div class="box-style-2 red">
+                    <a href="" title="Plan a visit">
+                        <img src="{% static 'img/icon-home-visit.png' %}" alt="">
+                        <h3>Plan a visit</h3>
+                        <p>Lorem ipsum dolor sit amet, dicta aliquip ad vix, ne sit everti corpora. Qui cu eros feugiat, elitr iudico ad pri.</p>
+                    </a>
+                </div>
             </div>
         </div>
-
-        <div class="col-md-4 col-sm-4">
-        	<div class="box-style-2 orange">
-            	<a href="" title="Apply">
-                	<img src="{% static 'img/icon-home-apply.png' %}" alt="">
-                    <h3>Apply now</h3>
-                    <p>Lorem ipsum dolor sit amet, dicta aliquip ad vix, ne sit everti corpora. Qui cu eros feugiat, elitr iudico ad pri.</p>
-                </a>
-            </div>
-        </div>
-
-        <div class="col-md-4 col-sm-4">
-        	<div class="box-style-2 red">
-            	<a href="" title="Plan a visit">
-                	<img src="{% static 'img/icon-home-visit.png' %}" alt="">
-                    <h3>Plan a visit</h3>
-                    <p>Lorem ipsum dolor sit amet, dicta aliquip ad vix, ne sit everti corpora. Qui cu eros feugiat, elitr iudico ad pri.</p>
-                </a>
-            </div>
-        </div>
-    </div>
-</div> <!-- end container-->
+    </div> <!-- end container-->
 
 
-<div class="container">
-    <div class="row">
-        <aside class="col-md-4 col-sm-4">
+    <div class="container">
+        <div class="row">
+            <aside class="col-md-4 col-sm-4">
 
-            <div class="box-style-1 ribbon borders">
+                <div class="box-style-1 ribbon borders">
 
-                <div class="feat">
-                    <i class="icon-group icon-3x"></i>
-                    <h3>Expert teachers</h3>
-                    <p>An utinam reprimique duo, putant mandamus cu qui. Autem possim his cu, quodsi nominavi fabellas
-                        ut sit, mea ea ullum epicurei. </p>
+                    <div class="feat">
+                        <i class="icon-group icon-3x"></i>
+                        <h3>Expert teachers</h3>
+                        <p>An utinam reprimique duo, putant mandamus cu qui. Autem possim his cu, quodsi nominavi fabellas
+                            ut sit, mea ea ullum epicurei. </p>
+                    </div>
+
+                    <hr class="double">
+
+                    <div class="feat">
+                        <i class="icon-film icon-3x"></i>
+                        <h3>Video Courses</h3>
+                        <p>An utinam reprimique duo, putant mandamus cu qui. Autem possim his cu, quodsi nominavi fabellas
+                            ut sit, mea ea ullum epicurei. </p>
+                    </div>
+
+                    <hr class="double">
+
+                    <div class="feat">
+                        <i class="icon-book icon-3x"></i>
+                        <h3>Library</h3>
+                        <p>An utinam reprimique duo, putant mandamus cu qui. Autem possim his cu, quodsi nominavi fabellas
+                            ut sit, mea ea ullum epicurei. </p>
+                    </div>
+
+                    <hr class="double">
+
+                    <div class="feat last">
+                        <i class="icon-laptop icon-3x"></i>
+                        <h3>Online courses</h3>
+                        <p>An utinam reprimique duo, putant mandamus cu qui. Autem possim his cu, quodsi nominavi fabellas
+                            ut sit, mea ea ullum epicurei. </p>
+                    </div>
+
                 </div>
+                <p>
+                    <a href="{% url 'courses' %}" title="All courses">
+                        <img src="{% static 'img/banner.jpg' %}" alt="Banner" class="img-rounded img-responsive">
+                    </a>
+                </p>
+            </aside>
 
-                <hr class="double">
-
-                <div class="feat">
-                    <i class="icon-film icon-3x"></i>
-                    <h3>Video Courses</h3>
-                    <p>An utinam reprimique duo, putant mandamus cu qui. Autem possim his cu, quodsi nominavi fabellas
-                        ut sit, mea ea ullum epicurei. </p>
-                </div>
-
-                <hr class="double">
-
-                <div class="feat">
-                    <i class="icon-book icon-3x"></i>
-                    <h3>Library</h3>
-                    <p>An utinam reprimique duo, putant mandamus cu qui. Autem possim his cu, quodsi nominavi fabellas
-                        ut sit, mea ea ullum epicurei. </p>
-                </div>
-
-                <hr class="double">
-
-                <div class="feat last">
-                    <i class="icon-laptop icon-3x"></i>
-                    <h3>Online courses</h3>
-                    <p>An utinam reprimique duo, putant mandamus cu qui. Autem possim his cu, quodsi nominavi fabellas
-                        ut sit, mea ea ullum epicurei. </p>
-                </div>
-
-            </div>
-            <p>
-                <a href="{% url 'courses' %}" title="All courses">
-                    <img src="{% static 'img/banner.jpg' %}" alt="Banner" class="img-rounded img-responsive">
-                </a>
-            </p>
-        </aside>
-
-        <section class="col-md-8 col-sm-8">
-            <div class="col-right">
-                <h2>Upcoming courses</h2>
-                <p>An utinam reprimique duo, putant mandamus cu qui. Autem possim his cu, quodsi nominavi fabellas ut
-                    sit, mea ea ullum epicurei. Saepe tantas ocurreret duo ea, has facilisi vulputate an. Priaeque
-                    iuvaret nominati et, ad mea clita numquam. Maluisset dissentiunt et per, dico liber erroribus vis
-                    te. Dolor consul graecis nec ut, scripta eruditi scriptorem et nam.</p>
-                <hr>
-                {% if courses %}
-                    {% for course in courses %}
-                        <div class="strip-lessons">
-                            <div class="row">
-                                <div class="col-md-3 col-xs-6">
-                                    <div class="box-style-one borders">
-                                        <img src="{% static 'img/lessons.png' %}" alt="">
-                                        <h5>Intro</h5>
+            <section class="col-md-8 col-sm-8">
+                <div class="col-right">
+                    <h2>Upcoming courses</h2>
+                    <p>An utinam reprimique duo, putant mandamus cu qui. Autem possim his cu, quodsi nominavi fabellas ut
+                        sit, mea ea ullum epicurei. Saepe tantas ocurreret duo ea, has facilisi vulputate an. Priaeque
+                        iuvaret nominati et, ad mea clita numquam. Maluisset dissentiunt et per, dico liber erroribus vis
+                        te. Dolor consul graecis nec ut, scripta eruditi scriptorem et nam.</p>
+                    <hr>
+                    {% if courses %}
+                        {% for course in courses %}
+                            <div class="strip-lessons">
+                                <div class="row">
+                                    <div class="col-md-3 col-xs-6">
+                                        <div class="box-style-one borders">
+                                            <img src="{% static 'img/lessons.png' %}" alt="">
+                                            <h5>Intro</h5>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix visible-xs-block"></div>
+                                    <div class="col-md-9">
+                                        <h4>{{ course.title }}</h4>
+                                        <p>{{ course.details | safe | slice:":500" }}</p>
+                                        <ul class="data-lessons">
+                                            <li><i class="icon-time"></i>{{ course.duration }}</li>
+                                            <li><i class="icon-film"></i>
+                                                <a class="fancybox-media" href="http://www.youtube.com/watch?v=pgk-719mTxM">Playvideo</a>
+                                            </li>
+                                            <li><i class="icon-cloud-download"></i><a href="#">Donwload prospect</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="clearfix visible-xs-block"></div>
-                                <div class="col-md-9">
-                                    <h4>{{ course.title }}</h4>
-                                    <p>{{ course.details | safe | slice:":500" }}</p>
-                                    <ul class="data-lessons">
-                                        <li><i class="icon-time"></i>{{ course.duration }}</li>
-                                        <li><i class="icon-film"></i>
-                                            <a class="fancybox-media" href="http://www.youtube.com/watch?v=pgk-719mTxM">Playvideo</a>
-                                        </li>
-                                        <li><i class="icon-cloud-download"></i><a href="#">Donwload prospect</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div><!-- End Strip course -->
-                    {% endfor %}
+                            </div><!-- End Strip course -->
+                        {% endfor %}
 
-                {% else %}
-                    <p>No course</p>
-                {% endif %}
+                    {% else %}
+                        <p>No course</p>
+                    {% endif %}
 
-                <p class="text-center"><a href="{% url 'courses' %}" class="button_large">View all courses </a></p>
+                    <p class="text-center"><a href="{% url 'courses' %}" class="button_large">View all courses </a></p>
 
-            </div>
-        </section>
-  </div>
-</div><!-- end container-->
-
+                </div>
+            </section>
+      </div>
+    </div><!-- end container-->
 
 {% endblock %}
